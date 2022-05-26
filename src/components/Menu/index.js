@@ -11,7 +11,7 @@ function Menu(){
                 <img className="Logo" src={Logo} alt="HisaoFlix logo"/>
             </a>
 
-            <Button className="ButtonLink" href="/">
+            <Button as="a" className="ButtonLink" href="/">
                 Novo Vídeo
             </Button>
         </nav>
