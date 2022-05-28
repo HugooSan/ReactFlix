@@ -59,5 +59,6 @@ export const ButtonLink = styled(Button)`
         position: fixed;
         right: 0;
         text-align: center;
+        text-decoration: none;
     }
 `;
