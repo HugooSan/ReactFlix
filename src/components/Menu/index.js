@@ -3,18 +3,19 @@ import Logo from '../../assets/img/logo.png'
 import Button from '../Button';
 import ButtonLink from './components/ButtonLink';
 import './Menu.css'
+import { LogoImage, MenuWrapper } from './style';
 
 function Menu(){
     return (
-        <nav className="Menu">
+        <MenuWrapper className="Menu">
             <a href="/">
-                <img className="Logo" src={Logo} alt="HisaoFlix logo"/>
+                <LogoImage className="Logo" src={Logo} alt="HisaoFlix logo"/>
             </a>
 
-            <Button as="a" className="ButtonLink" href="/">
+            <ButtonLink as="a" className="ButtonLink" href="/">
                 Novo Vídeo
-            </Button>
-        </nav>
+            </ButtonLink>
+        </MenuWrapper>
     );
 };
 
