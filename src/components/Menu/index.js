@@ -1,9 +1,7 @@
 import React from 'react';
-import Logo from '../../assets/img/logo.png'
+import Logo from '../../assets/img/logo.png';
 import Button from '../Button';
-import ButtonLink from './components/ButtonLink';
-import style from './style'
-import { LogoImage, MenuWrapper } from './style';
+import { LogoImage, MenuWrapper} from './style';
 
 function Menu(){
     return (
@@ -12,9 +10,9 @@ function Menu(){
                 <LogoImage className="Logo" src={Logo} alt="HisaoFlix logo"/>
             </a>
 
-            <ButtonLink as="a" className="ButtonLink" href="/">
+            <Button as="a" className="ButtonLink" href="/">
                 Novo Vídeo
-            </ButtonLink>
+            </Button>
         </MenuWrapper>
     );
 };

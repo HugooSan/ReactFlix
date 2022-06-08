@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
 export const ContentAreaContainer = styled.section`
+  align-items: center;
+  background-image: ${({backgroundImage})=>`url(${backgroundImage})`};
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  height: 80vh;
+  justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   z-index: 10;
   @media (max-width: 800px) {
-    padding-top: 100px;
+    
     flex-direction: column;
+    height: auto;
+    min-height: 50vh;
+    padding-top: 100px;
   }
 `;
 

@@ -8,6 +8,12 @@ import Footer from './components/Footer/index';
 
 const AppWrapper = styled.div`
   background:var(--grayDark);
+
+  padding-top: 94px;
+
+  @media (max-width: 800px) {
+    padding-top: 40px;
+  }
 `
 
 
@@ -16,6 +22,14 @@ function App() {
     <AppWrapper>
       <Menu />
       
+      
+      
+      <BannerMain
+        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
+        url={dadosIniciais.categorias[0].videos[0].url}
+        videoDescription={"O que é Front-end?"}
+      />
+
     </AppWrapper>
   );
 }
